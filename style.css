@@ -1,0 +1,202 @@
+body{
+font-family: 'Hanken Grotesk', sans-serif;;
+}
+
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+}
+
+.box{
+    height: 50vh;
+    width: 20vw;
+    border-radius: 0 20px 20px 0px;
+    position: relative;
+    right: 16px;
+    text-align: center;
+    box-shadow: 0.5em 0.5em 1em hsl(222, 53%, 93%);
+    
+    
+}
+.box1{
+    height: 50vh;
+    width: 18vw;
+    border-radius: 20px;
+    z-index: 1;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%) );
+    
+
+}
+
+ul{
+    list-style-type: none;
+
+}
+.Reaction,.Memory,.Verbal,.Visual{
+    margin: 10px 0;
+    padding:10px;
+    border-radius: 5px;
+    width: 12em;
+    box-sizing: border-box;
+
+}
+.title{
+    margin-right: 2em;
+}
+.Reaction{
+    margin-top: 0;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 75%, 97%);;
+}
+
+li{
+    display: flex;
+    justify-content: flex-start;
+}
+.button{
+    margin: 5px;
+    padding: 8px 40px;
+    width: 14em;
+    border-radius: 15px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: 0 none;
+    margin-top: 2em;
+
+  
+}
+.list{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: inline;
+}
+.result{
+    position: absolute;
+    top: 1em;
+    color: hsl(241, 100%, 89%);
+}
+.circle{
+    position: absolute;
+    top: 5em;
+    height: 8em;
+    /*  */
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width:8em;
+    border-radius: 4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Great{
+    position: absolute;
+    bottom: 5em;
+}
+.para{
+    position: absolute;
+    bottom: 1em;
+    left: 1.2em;
+    right: 1.2em;
+    text-align: center;
+    font-size: 0.9em;
+    color: hsl(241, 100%, 89%);
+}
+h4{
+    margin: 0;
+    padding-left: 0.5em;
+}
+.Memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(33, 65%, 97%);
+}
+.Verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(167, 100%, 95%);
+}
+
+.Visual{
+    color: hsl(234, 85%, 45%);
+    background-color:  hsl(235, 85%, 97%);
+}
+.of-100{
+    position: relative;
+    top: 0.5em;
+    margin: 0;
+    color: hsl(241, 100%, 89%);
+
+}
+.num-76{
+    font-size: 3em;
+    position: relative;
+    top: 0.3em;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 800;
+    margin: 0;
+
+}
+.align-right{
+    width: 100%;
+    text-align: right;
+}
+.total-marks{
+    color: gray;
+    font-weight: 700;
+}
+.score-secured{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+
+@media (max-width:475px){
+ .container{
+    display: flex;
+    flex-direction: column;
+ }
+ body{
+    margin: 0;
+ }
+ .box,.box1{
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 25px 25px ;
+ }
+ .Reaction,.Memory,.Verbal,.Visual{
+    width: 18em;
+    margin: 1em 0;
+}
+.button{
+    width: 20em;
+    margin: 1em auto 0 auto;
+}
+.title{
+margin-right: 5em;
+}
+.circle{
+        height: 12em;
+        width:12em;
+        border-radius: 6em;
+}
+
+.result{
+    top: 2em;
+}
+.num-76{
+    font-size: 5em;
+}
+.para{
+    font-size: 1.1em;
+}
+ }
